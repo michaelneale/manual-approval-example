@@ -1,0 +1,8 @@
+- name: Jenkinsfile build
+  service: jenkins
+  command: -f /workspace
+- type: manual    
+  steps: 
+    - service: jenkins
+      name: Approval
+      command: -f /workspace
